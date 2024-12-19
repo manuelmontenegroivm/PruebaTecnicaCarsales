@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Gzq0tFbIQ54U+P3yd9j5A8TowENWHGgEVZd6htjPpjA=",
+  "Source": "RickAndMortyBackend",
+  "BasePath": "_content/RickAndMortyBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

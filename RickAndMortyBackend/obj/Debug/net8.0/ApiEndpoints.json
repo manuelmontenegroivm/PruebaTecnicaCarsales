@@ -1,0 +1,176 @@
+[
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.CharacterController",
+    "Method": "ObtenerTodosLosPersonajes",
+    "RelativePath": "api/Character",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.CharacterController",
+    "Method": "ObtenerMultiplesPersonajesPorId",
+    "RelativePath": "api/Character/ObtenerMultiplesPersonajesPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Int32[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.CharacterController",
+    "Method": "ObtenerPersonajePorId",
+    "RelativePath": "api/Character/ObtenerPersonajePorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.CharacterController",
+    "Method": "ObtenerPersonajesPaginado",
+    "RelativePath": "api/Character/ObtenerPersonajesPaginado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.EpisodeControler",
+    "Method": "ObtenerTodosLosEpisodios",
+    "RelativePath": "api/EpisodeControler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.EpisodeControler",
+    "Method": "ObtenerEpisodioPorId",
+    "RelativePath": "api/EpisodeControler/ObtenerEpisodioPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.EpisodeControler",
+    "Method": "ObtenerEpisodiosPaginado",
+    "RelativePath": "api/EpisodeControler/ObtenerEpisodiosPaginado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.EpisodeControler",
+    "Method": "ObtenerMultiplesEpisodiosPorId",
+    "RelativePath": "api/EpisodeControler/ObtenerMultiplesEpisodiosPorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Int32[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.LocationControler",
+    "Method": "ObtenerTodasLasLocalizaciones",
+    "RelativePath": "api/LocationControler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.LocationControler",
+    "Method": "ObtenerLocalizacionPorId",
+    "RelativePath": "api/LocationControler/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.LocationControler",
+    "Method": "ObtenerMultiplesLocalizacionesPorId",
+    "RelativePath": "api/LocationControler/multiple",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Int32[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RickAndMortyBackend.Controllers.LocationControler",
+    "Method": "ObtenerLocalizacionesPaginado",
+    "RelativePath": "api/LocationControler/paginado/{pagina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagina",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
