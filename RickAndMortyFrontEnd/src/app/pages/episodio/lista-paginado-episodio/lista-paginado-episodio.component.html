@@ -1,0 +1,95 @@
+<div class="header">
+  <h1>Rick y Morty</h1>
+</div>
+
+<div class="containerMain" *ngIf="mostrar">
+  <div class="box blue relative">
+    <h2 class="title">Episodios</h2>
+    <ul>
+      <li *ngFor="let episodioPaginado of episodios">
+        <a href="#" class="hoverA" (click)="obtenerEpisodioPorId(episodioPaginado.id)">{{
+          episodioPaginado.episode + ". " + episodioPaginado.name
+        }}</a>
+      </li>
+    </ul>
+    <div>
+      <a href="#" title="Atras" (click)="cambiarPagina('izq')">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-left"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+          />
+        </svg>
+      </a>
+      Página {{ paginaActual }} de {{ episodiosPaginado.info.pages }}
+      <a href="#" title="Adelante" (click)="cambiarPagina('der')">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-right"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="box orange relative">
+    <h2 class="title">{{ episodio.episode + " " + episodio.name }}</h2>
+    <span class="gray">Emisión: {{ episodio.air_Date }}</span>
+    <h3>Personajes</h3>
+    <ul>
+      <li *ngFor="let character of personajes">
+        <a
+          href="#"
+          class="hoverA"
+          (click)="obtenerPersonajePorId(character.id)"
+          title="Detalle personaje"
+          >{{ character.name }}</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="box green relative">
+    <h2 class="title">{{ personaje.name }}</h2>
+    <div><img [src]="personaje.image" /></div>
+    <div class="bg-opacity">
+      <h3>Origen</h3>
+      <p>- {{ personaje.origin.name }}</p>
+    </div>
+    <div class="bg-opacity">
+      <h3>Último avistamiento</h3>
+      <p>- {{ personaje.location.name }}</p>
+    </div>
+      
+    <div class="bg-opacity">
+      <h3>Estado</h3>
+      <p>- {{ personaje.status }}</p>
+    </div>
+    <div class="bg-opacity">
+      <h3>Género</h3>
+      <p>- {{ personaje.gender }}</p>
+    </div>
+    
+    
+    
+    
+  </div>
+</div>
+<div style="padding: 10px" *ngIf="!mostrar">
+  <div class="purple">
+    <h1>Hay inconvenientes para obtener información del servidor</h1>
+  </div>
+</div>
